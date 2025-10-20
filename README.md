@@ -1,4 +1,4 @@
-# HNG Stage 0 – Profile Endpoint API
+# HNG Stage 0 – Dynamic Profile Endpoint API
 
 This repository contains my submission for the HNG Stage 0 backend task. It exposes a `/me` endpoint built with FastAPI that returns my profile details and a live cat fact from the Cat Facts API.
 
@@ -47,7 +47,7 @@ https://50b5e2f8b257.ngrok-free.app/me
 
 ```bash
 # Clone repo
-git clone https://github.com/Fabito97/hng13-backend-profile-api
+git clone https://github.com/Fabito97/hng13-backend-profile-api.git
 cd hng13-backend-profile-api
 
 # Install dependencies
@@ -96,12 +96,6 @@ curl https://50b5e2f8b257.ngrok-free.app/me
 
 ---
 
-## 👨‍💻 Author
-
-- **Fabian Muoghalu**
-- Email: `fabbenco97@gmail.com`
-
----
 
 ## ✅ Checklist
 
@@ -112,3 +106,6 @@ curl https://50b5e2f8b257.ngrok-free.app/me
 * [ ] Deployed and accessible publicly ✅
 
 ---
+
+## Licence
+This is free for use to anyone
