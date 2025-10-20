@@ -1,15 +1,17 @@
 from datetime import datetime
-from fastapi import HTTPException
 from fastapi import FastAPI
-from pydantic import BaseModel
 from utils import get_fact
+import dotenv
+import os
+
+dotenv.load_dotenv()
 
 app = FastAPI()
 
 
-email = "fabbenco97@gmail.com"
-name  = "Fabian Muoghalu"
-stack = "C#, Python, NodeJs"
+EMAIL = os.getenv("EMAIL")
+NAME  = os.getenv("NAME")
+STACK = os.getenv("STACK")
 
 
 @app.get("/me")
@@ -22,9 +24,9 @@ async def get_profile():
     return {
       "status": "success",
       "user": {
-        "email": email,
-        "name": name,
-        "stack": stack
+        "email": EMAIL,
+        "name": NAME,
+        "stack": STACK
       },
       "timestamp": datetime.utcnow(),
       "fact": fact

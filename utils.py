@@ -13,7 +13,7 @@ async def get_fact():
     fallback_message = f'Sorry, we couldn\'t get facts for you, but here\'s is a joke for you: {random.choice(fallback_jokes)}'
     try:
         async with httpx.AsyncClient() as client:
-            response = await client.get('https://catfact.ninja/fac')
+            response = await client.get('https://catfact.ninja/fact')
             # check if response failed
             if response.status_code != 200:
                 print("Failed to fetch fact, using fallback joke.")
