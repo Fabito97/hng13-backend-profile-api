@@ -33,7 +33,7 @@ This API exposes a single endpoint `/me` which returns:
 * Live Cat Fact API integration
 * Graceful fallback if external API fails
 * Clean JSON response matching HNG spec
-* Retry for failed get cat fact api call
+* Retry for failed cat fact api call
 * Rate limiting of 5 requests per minute for each device
 
 ---
@@ -92,9 +92,10 @@ curl https://50b5e2f8b257.ngrok-free.app/me
 
 ## 🛠 Tech Stack
 
-* **FastAPI** (Python)
-* **httpx** — async external call
-* **Uvicorn** — server
+* **FastAPI** — Web framework for building APIs
+* **httpx** — Async HTTP client for external API calls
+* **Uvicorn** — ASGI server for running FastAPI apps
+* **slowapi** — Rate limiting middleware for FastAPI
 
 ---
 
@@ -109,5 +110,5 @@ curl https://50b5e2f8b257.ngrok-free.app/me
 
 ---
 
-## Licence
-This is free for use to anyone
+## License
+This project is free to use, modify, and distribute by anyone for any purpose.
