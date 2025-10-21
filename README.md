@@ -33,6 +33,8 @@ This API exposes a single endpoint `/me` which returns:
 * Live Cat Fact API integration
 * Graceful fallback if external API fails
 * Clean JSON response matching HNG spec
+* Retry for failed get cat fact api call
+* Rate limiting of 5 requests per minute for each device
 
 ---
 
